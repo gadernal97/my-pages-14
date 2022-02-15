@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --cor0:#F20519;
+    --cor1:#F20544;
+    --cor2:#83A603;
+    --cor3:#F29F05;
+    --cor4:#F2F2F2;
+}
+body{
+background:var(--cor4);
+
+font-family: 'Work Sans', sans-serif;
+
+}
+
+
+article{
+    
+    height: 67rem;
+    color:#F20519;
+    margin: auto;
+}
+
+.parallax{
+    background-image: url('../img/the-blackrabbit-rtAkRV_kmY4-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #F2F2F2;
+    
+}
+.parallax button{
+    border:3px solid #F2F2F2;
+    padding:0.78rem;
+    width: 150px;
+    margin: 0.36rem;
+    color: #F2F2F2;
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.parallax button:hover{
+    background:#F2F2F2;
+    color: #F20519;
+}
+.line{
+    height: .98em;
+    width: 120px;
+}
+.container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.box1 button{
+    
+    border:3px solid var(--cor0);
+    padding:0.70em;
+    background:transparent;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.box1{
+    padding: 15px;
+}
+.box1 button:hover{
+    color:#F20544;
+    background-color: #83A603;
+
+}
+.rect{
+    border: 5px solid #F20544;
+    width: 60rem;
+    height: 50rem;
+    display: flex;
+    background-color: #F29F05;
+    align-items: center;
+    justify-content: center;
+
+}
+.content{
+    width: 16rem;
+    height: 10rem;
+    border: 0.18rem solid gray ;
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 0.56em;
+    margin: 1rem;
+}
+.content button{
+    border:3px solid var(--cor0);
+    padding:0.70em;
+    background:transparent;
+    width: 120px;
+    text-transform: uppercase;
+    font-weight: bold
+}
+.content button:hover{
+    color:#F20544;
+    background-color: #83A603;
+
+}
+#parallax2{
+ background-image: url('../img/pexels-cup-of-couple-8471716.jpg');
+ background-size:cover ;
+ background-attachment: fixed;
+ margin-bottom:2em ;
+ height: 50rem;
+}
+#parallax3{
+    background-image: url('../img/hybrid-storytellers-2M9-LTrpxJw-unsplash.jpg');
+    background-size:cover ;
+ background-attachment: fixed;
+ margin-bottom:2em ;
+ height: 50rem;
+}
+#parallax4{
+    margin-top: -20rem;
+    background: url('../img/coffeefy-workafe-Y0zbn9lPCEU-unsplash.jpg');
+    background-attachment: fixed;
+    height: 40rem;
+    margin-bottom: 2rem;
+}
+footer{
+    background:#F20519;
+}
+@media all and (max-width:920px) {
+    article{
+        font-size: 1em;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .rect{
+        
+        width: 15rem;
+        height: 60rem;
+        flex-direction: column;
+        
+    
+    }
+    .content{
+        width: 12rem;
+        height: 12rem;
+        font-size: .90rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
+    
+    
+}
+@media all and (max-width:375px){
+#parallax{
+background-position: center;
+}
+#parallax3{
+    background-position: center;
+}
+#parallax4{
+    margin-top: -40rem;
+    background-position: center;
+}
+}
